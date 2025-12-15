@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Formulario Vulnerabilidad RED-ESS v21-GH</title>
+
+    <!-- Cargar CSS -->
+    <link rel="stylesheet" href="estilos.css" />
+
+    <!-- Librería para exportar Word -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.7.0/docx.min.js"></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="titulo">FORMULARIO DE VALORACIÓN DE VULNERABILIDAD — RED-ESS</h1>
+        <h2 class="subtitulo">Versión Institucional 2025 — v21-GH</h2>
+    </header>
+
+    <section class="identificacion">
+        <h3>Datos de identificación</h3>
+        <label>Nombre y apellidos:</label>
+        <input type="text" id="inputNombre" placeholder="Nombre y apellidos..." />
+
+        <label>Evaluador/a:</label>
+        <input type="text" id="inputEvaluador" placeholder="Profesional responsable..." />
+
+        <label>Fecha:</label>
+        <input type="date" id="inputFecha" />
+    </section>
+
+    <hr />
+
+    <section id="formulario">
+        <h2>Formulario de evaluación</h2>
+        <p>Seleccione los ítems que correspondan a la situación observada.</p>
+
+        <!-- Aquí se insertarán dinámicamente todas las categorías e ítems -->
+        <div id="contenedorItems"></div>
+
+        <div class="botonera">
+            <button onclick="calcularResultados()">Calcular resultados</button>
+            <button onclick="limpiarFormulario()">Limpiar</button>
+            <button onclick="generarWord()">Generar Word</button>
+        </div>
+    </section>
+
+    <section id="resultados" style="display:none;">
+        <h2>Resultados de la valoración</h2>
+        <div id="resumenResultados"></div>
+
+        <h3>Plan de intervención individual (generado automáticamente)</h3>
+
+        <div class="plan-container">
+            <h4>Ámbito Educativo — Objetivos</h4>
+            <textarea id="planEduObj"></textarea>
+
+            <h4>Ámbito Educativo — Principales actuaciones</h4>
+            <textarea id="planEduAct"></textarea>
+
+            <h4>Ámbito Servicios Sociales — Objetivos</h4>
+            <textarea id="planSocObj"></textarea>
+
+            <h4>Ámbito Servicios Sociales — Principales actuaciones</h4>
+            <textarea id="planSocAct"></textarea>
+
+            <h4>Ámbito Salud — Objetivos</h4>
+            <textarea id="planSaludObj"></textarea>
+
+            <h4>Ámbito Salud — Principales actuaciones</h4>
+            <textarea id="planSaludAct"></textarea>
+        </div>
+    </section>
+
+    <!-- Lógica del formulario -->
+    <script src="logica.js"></script>
+
+</body>
+</html>

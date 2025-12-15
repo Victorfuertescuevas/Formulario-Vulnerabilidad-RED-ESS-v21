@@ -1,0 +1,173 @@
+/* ============================================
+   ESTILOS GENERALES
+============================================ */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fafafa;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+.encabezado {
+    background: #dce3ff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #8395ff;
+}
+
+.titulo {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.subtitulo {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* ============================================
+   SECCIÓN IDENTIFICACIÓN
+============================================ */
+
+.identificacion {
+    padding: 20px;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+
+.identificacion label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.identificacion input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* ============================================
+   FORMULARIO
+============================================ */
+
+#formulario {
+    padding: 20px;
+}
+
+.categoria {
+    background: #eef1ff;
+    padding: 15px;
+    border-left: 6px solid #6b7cff;
+    margin-bottom: 15px;
+}
+
+.categoria h3 {
+    margin: 0 0 10px;
+}
+
+.subcategoria {
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.subcategoria h4 {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Ítems uno por línea */
+.checkbox-item {
+    display: block; /* ← ESSENCIAL PARA VOLVER A LÍNEA */
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.botonera {
+    margin-top: 20px;
+}
+
+.botonera button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #6b7cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botonera button:hover {
+    background: #5966dd;
+}
+
+/* ============================================
+   RESULTADOS
+============================================ */
+
+#resultados {
+    background: #ffffff;
+    padding: 20px;
+    border-top: 3px solid #8395ff;
+}
+
+.resultado-categoria {
+    background: #f6f6f6;
+    padding: 12px;
+    border-left: 4px solid #999;
+    margin-bottom: 10px;
+}
+
+.riesgo-bajo {
+    border-left-color: #2ecc71;
+}
+
+.riesgo-medio {
+    border-left-color: #f39c12;
+}
+
+.riesgo-alto {
+    border-left-color: #e74c3c;
+}
+
+/* ============================================
+   PLAN DE INTERVENCIÓN
+============================================ */
+
+.plan-container textarea {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 18px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #aaa;
+    background: #fcfcfc;
+}
+
+.plan-container textarea:focus {
+    outline: 2px solid #6b7cff;
+    background: #ffffff;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 20px;
+    }
+    .subtitulo {
+        font-size: 14px;
+    }
+}
